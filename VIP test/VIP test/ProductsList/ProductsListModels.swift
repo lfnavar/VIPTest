@@ -18,7 +18,7 @@ import UIKit
 /// View Model: the data that you need to show in the view
 struct ProductsList {
     
-    // the struct is nested because probably in a scene you need another struct for other elements
+    // the struct is nested because probably in a scene you need another struct for other elements for example probably you need a struct for update or post data
     struct FetchProducts {
         struct Request {
         

@@ -28,6 +28,7 @@ class ProductsListInteractor: ProductsListBusinessLogic, ProductsListDataStore
 {
     // presenter and worker type variables
     var presenter: ProductsListPresentationLogic?
+    // you can change the product store value for another class ProductProtocol Type
     var worker = ProductsListWorker(productsStore: AlamoFireStore())
     
     // Variable declaration for the protocol ProductsListDataStore

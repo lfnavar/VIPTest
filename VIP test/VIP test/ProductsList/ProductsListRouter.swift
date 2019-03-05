@@ -18,7 +18,7 @@ import UIKit
   func routeToDetailProduct(segue: UIStoryboardSegue?)
 }
 
-// protocol that receive the data from the interactor, this data is sent to detail Product scene and received for the protocol inside DetailProductRouter.
+// protocol that receive the data from the interactor, this data is sent to detail Product scene and received for the protocol inside DetailProductRouter. if you see is a variable ProductsListDataStore type, is the name of the protocol in the interactor
 protocol ProductsListDataPassing
 {
   var dataStore: ProductsListDataStore? { get }
@@ -33,15 +33,15 @@ class ProductsListRouter: NSObject, ProductsListRoutingLogic, ProductsListDataPa
   func routeToDetailProduct(segue: UIStoryboardSegue?)
   {
     if let segue = segue {
-      let destinationVC = segue.destination as! DetailProductViewController
-      var destinationDS = destinationVC.router!.dataStore
-    passDataToSomewhere(source: dataStore!, destination: &destinationDS!)
+        let destinationVC = segue.destination as! DetailProductViewController
+        var destinationDS = destinationVC.router!.dataStore
+        passDataToSomewhere(source: self.dataStore!, destination: &destinationDS!)
     } else {
-      let storyboard = UIStoryboard(name: "Main", bundle: nil)
-      let destinationVC = storyboard.instantiateViewController(withIdentifier: "DetailProductVC") as! DetailProductViewController
-      var destinationDS = destinationVC.router?.dataStore!
-        passDataToSomewhere(source: dataStore!, destination: &destinationDS!)
-      navigateToSomewhere(source: viewController!, destination: destinationVC)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DetailProductVC") as! DetailProductViewController
+        var destinationDS = destinationVC.router?.dataStore!
+        passDataToSomewhere(source: self.dataStore!, destination: &destinationDS!)
+        navigateToSomewhere(source: self.viewController!, destination: destinationVC)
     }
   }
 

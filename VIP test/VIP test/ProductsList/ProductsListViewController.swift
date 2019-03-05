@@ -55,7 +55,7 @@ class ProductsListViewController: UITableViewController, ProductsListDisplayLogi
     {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
+            if let router = self.router, router.responds(to: selector) {
                 router.perform(selector, with: segue)
             }
         }
@@ -78,13 +78,13 @@ class ProductsListViewController: UITableViewController, ProductsListDisplayLogi
     func requestProducts()
     {
         let request = ProductsList.FetchProducts.Request()
-        interactor?.fetchProducts(request: request)
+        self.interactor?.fetchProducts(request: request)
     }
     
     // Function that handle the data received from the presenter and later displayed in the table view
     func displayProducts(viewModel: ProductsList.FetchProducts.ViewModel)
     {
-        displayedProducts = viewModel.displayedProducts
+        self.displayedProducts = viewModel.displayedProducts
         tableView.reloadData()
     }
     

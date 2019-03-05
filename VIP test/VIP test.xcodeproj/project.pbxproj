@@ -20,7 +20,6 @@
 		8A2E9876221D94F600EA72CD /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E9870221D94F600EA72CD /* ProductsListViewController.swift */; };
 		8A2E9877221D94F600EA72CD /* ProductsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E9871221D94F600EA72CD /* ProductsListInteractor.swift */; };
 		8A2E9879221DA2F400EA72CD /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E9878221DA2F400EA72CD /* Products.swift */; };
-		8A2E987B221DA93900EA72CD /* ProductsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E987A221DA93900EA72CD /* ProductsWorker.swift */; };
 		8A2E987F221DABE400EA72CD /* ProductStoreMem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E987E221DABE400EA72CD /* ProductStoreMem.swift */; };
 		8A2E9883221E0B3200EA72CD /* AlamoFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E9882221E0B3200EA72CD /* AlamoFireStore.swift */; };
 		8AE0280B221ED90B00D6E919 /* DetailProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE02805221ED90B00D6E919 /* DetailProductPresenter.swift */; };
@@ -76,7 +75,6 @@
 		8A2E9870221D94F600EA72CD /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		8A2E9871221D94F600EA72CD /* ProductsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListInteractor.swift; sourceTree = "<group>"; };
 		8A2E9878221DA2F400EA72CD /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
-		8A2E987A221DA93900EA72CD /* ProductsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsWorker.swift; sourceTree = "<group>"; };
 		8A2E987E221DABE400EA72CD /* ProductStoreMem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStoreMem.swift; sourceTree = "<group>"; };
 		8A2E9882221E0B3200EA72CD /* AlamoFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireStore.swift; sourceTree = "<group>"; };
 		8AE02805221ED90B00D6E919 /* DetailProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductPresenter.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 		8A2E9828221B5B9A00EA72CD /* VIP test */ = {
 			isa = PBXGroup;
 			children = (
-				8A2E986B221D908300EA72CD /* Workers */,
 				8A2E9869221D904500EA72CD /* Services */,
 				8A2E9868221D903C00EA72CD /* Model */,
 				8A2E9859221B5CC300EA72CD /* ProductsList */,
@@ -214,14 +211,6 @@
 				8A2E9882221E0B3200EA72CD /* AlamoFireStore.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		8A2E986B221D908300EA72CD /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				8A2E987A221DA93900EA72CD /* ProductsWorker.swift */,
-			);
-			path = Workers;
 			sourceTree = "<group>";
 		};
 		8AE02804221ED8DE00D6E919 /* DetailProduct */ = {
@@ -487,7 +476,6 @@
 				8AE0280C221ED90B00D6E919 /* DetailProductWorker.swift in Sources */,
 				8A2E9874221D94F600EA72CD /* ProductsListRouter.swift in Sources */,
 				8A2E9883221E0B3200EA72CD /* AlamoFireStore.swift in Sources */,
-				8A2E987B221DA93900EA72CD /* ProductsWorker.swift in Sources */,
 				8A2E9876221D94F600EA72CD /* ProductsListViewController.swift in Sources */,
 				8A2E9872221D94F600EA72CD /* ProductsListPresenter.swift in Sources */,
 				8AE0280D221ED90B00D6E919 /* DetailProductRouter.swift in Sources */,

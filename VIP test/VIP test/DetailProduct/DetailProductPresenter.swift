@@ -21,7 +21,7 @@ class DetailProductPresenter: DetailProductPresentationLogic
 {
   weak var viewController: DetailProductDisplayLogic?
   
-  // MARK: Do something
+  // MARK: Do all the logic to show the data in the view controller
   
   func presentProduct(response: DetailProduct.GetProduct.Response)
   {
