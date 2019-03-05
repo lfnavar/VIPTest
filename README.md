@@ -1,2 +1,2 @@
 # VIPTest
-iOS Mobile with VIP design Pattern and Clean Principles
+iOS app with VIP design Pattern and Clean Principles
